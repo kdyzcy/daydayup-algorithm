@@ -1,4 +1,4 @@
-package 左神算法啊;
+package 左神算法;
 
 import java.util.ArrayList;
 import java.util.List;

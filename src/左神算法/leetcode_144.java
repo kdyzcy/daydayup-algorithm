@@ -1,10 +1,10 @@
-package 左神算法啊;
+package 左神算法;
 
 import java.util.ArrayList;
 import java.util.List;
 
-//145. 二叉树的后序遍历
-public class leetcode_145 {
+//144. 二叉树的前序遍历
+public class leetcode_144 {
     public class TreeNode{
         int val;
         TreeNode left;
@@ -25,19 +25,19 @@ public class leetcode_145 {
     }
 
     class Solution {
-        public List<Integer> postorderTraversal(TreeNode root) {
+        public List<Integer> preorderTraversal(TreeNode root) {
             ArrayList<Integer> list=new ArrayList<Integer>();
-            postorder(root,list);
+           preorder(root,list);
             return list;
         }
 
-        public void postorder(TreeNode root,ArrayList<Integer> list){
+        public void preorder(TreeNode root,List<Integer> list){
             if(root==null){
                 return;
             }
-            postorder(root.left, list);
-            postorder(root.right, list);
             list.add(root.val);
+            preorder(root.left,list);
+            preorder(root.right,list);
         }
     }
 }

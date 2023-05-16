@@ -1,4 +1,4 @@
-package 左神算法啊;
+package 左神算法;
 //101. 对称二叉树
 public class leetcode_101 {
     public class TreeNode{
